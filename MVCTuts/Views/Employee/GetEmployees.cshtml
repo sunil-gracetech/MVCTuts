@@ -1,0 +1,39 @@
+﻿
+@model IEnumerable<MVCTuts.Contract.Response.EmployeewithDeprtment>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>I am Employee Controller Default method</h1>
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Dept</th>
+            </tr>
+            @foreach (var emp in Model)
+            {
+                <tr>
+                    <td>@emp.Id</td>
+                    <td>@emp.Name</td>
+                    <td>@emp.Email</td>
+                    <td>@emp.Gender</td>
+                    <td>@emp.Dept</td>
+                </tr>
+            }
+        </table>
+
+
+        @Html.ActionLink("Back", "Index")
+    </div>
+</body>
+</html>

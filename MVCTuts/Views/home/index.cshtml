@@ -1,0 +1,108 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div>
+        @*@using (Html.BeginForm("upload", "home", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+        {
+            <table>
+                <tr>
+                    <th><label>Please Select File : </label></th>
+                    <th><input type="file" name="files" /></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Upload" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@ViewBag.message</td>
+                </tr>
+            </table>
+        }*@
+
+
+        <table>
+            <tr>
+                <th><label>Please Select File : </label></th>
+                <th><input type="file" name="files"  id="myfile"/></th>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Upload" id="btn_upload" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div id="loaded_n_total"></div>
+                    <div id="uploadProgressBar"></div>
+                    <div id="uploadProgressBar"></div>
+                    <div id="status"></div>
+                </td>
+            </tr>
+        </table>
+
+
+        <h1>Today is:  @DateTime.Now </h1>
+    </div>
+    <script type="text/javascript">
+
+        function uploadProgressHandler(event) {
+            $("#loaded_n_total").html("Uploaded " + event.loaded + " bytes of " + event.total);
+            var percent = (event.loaded / event.total) * 100;
+            var progress = Math.round(percent);
+            $("#uploadProgressBar").html(progress + " percent na ang progress");
+            $("#uploadProgressBar").css("width", progress + "%");
+            $("#status").html(progress + "% uploaded... please wait");
+        }
+
+        function loadHandler(event) {
+            $("#status").html(event.target.responseText);
+            $("#uploadProgressBar").css("width", "0%");
+        }
+
+        function errorHandler(event) {
+            $("#status").html("Upload Failed");
+        }
+
+        function abortHandler(event) {
+            $("#status").html("Upload Aborted");
+        }
+
+        $(document).ready(function () {
+            $("#btn_upload").click(function () {
+                var file = $("#myfile")[0].files[0];
+                console.log(file)
+                var formdata = new FormData()
+                formdata.append("files", file);
+                $.ajax({
+                    url: '@Url.Action("upload","Home")',
+                    method: 'POST',
+                    type: 'POST',
+                    data: formdata,
+                    contentType: false,
+                    processData: false,
+                    xhr: function () {
+                        var xhr = new window.XMLHttpRequest();
+                        xhr.upload.addEventListener("progress",
+                            uploadProgressHandler,
+                            false
+                        );
+                        xhr.addEventListener("load", loadHandler, false);
+                        xhr.addEventListener("error", errorHandler, false);
+                        xhr.addEventListener("abort", abortHandler, false);
+
+                        return xhr;
+                    }
+                });
+            })
+        })
+    </script>
+</body>
+</html>

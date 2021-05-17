@@ -1,0 +1,938 @@
+Javascript
+Advance Javascript
+ECMA6
+Typescript
+Angular- 8/9/10
+-------------------------------
+Javascript-
+--------------
+1- About js/history
+2- Datatype, variable, operator and expressions
+3-Javascript input and output
+4- Conditional statements
+	- control flow statements
+	- switch case
+	- loop
+5- Array-
+	-array delarations
+	-array types
+	-array manipulation methods
+6- Object-
+	- object delaration
+	-object types
+	- object methods and object manipulation
+7- Functions-
+	1- Built-in functions/ready made function
+	2- User define function-
+		
+8- DOM and BOM -
+	
+9- JSON and Ajax
+
+10- mini projects 
+------------------------------------------------------------------------
+Advance Javascript-
+	1- Object Oriented Programming
+	2- Exception and Exception handling
+	3- Code Debuging
+	4- Understanding Design Pattern
+-------------------------------------------------------------------------
+ECMA6- 
+	1- let and const
+	2- arrow function, lambda operator
+	3- rest parameter,spread parameter
+	4- template lietrals
+	5- OOPs
+	6- Collections
+	7- Async and await
+	8- promises
+-----------------------------------------------------------------------------------------------
+
+
+
+
+typescript- 
+	features of typescript
+-----------------------------------------------------------------------------------------------
+student_name="Ajay"/        s="ajay";
+
+roll_number=101
+-------------------------------
+Angular- 
+installation
+Basic project structure
+-----------------------------------------------------------------------------------------------
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+Typescript-----> Compiler/Transpiler------> Plain Javascript
+---------------------------------------------------------------------------------
+About Javascript:-
+Javascript is the client side scripting language,it is executed by web browser. javascript is object oriented and object based programming language. javascript invented by tim berner lee cern in 1995.
+----------------------------------------------------------
+
+
+Datatype-:
+Primitive Datatype- string,number,boolean,datetime, null, undefine etc.
+Non-primitive Datatype- Array, object, functions, regular expression etc.
+--------------------------------------------
+Simple type- string, number, boolean, datetime,null,undefine etc.
+Complex type- object, regular expression etc.
+---------------------------------------------------------------------------------------
+Variable declaration rules-
+1- variable name must be alphanumaric.
+2- variable name must be start with alphabet.
+3- variable name can't contains special characters.
+4- variable name can't contains blank space. we can use _ on the place of it.
+5- variable name are case sensitive.
+-----------------------------------------------------
+Variable hoisting-: 
+var age=10
+var s_name="ajay";
+
+document.write(x);
+var x="deepak";
+
+variable not defined/ variable undefine.
+----------------------------------------------------------------------------------------
+Operator:
+1- Arithmatic operator:  +,-,/,%,*
+2- Relational: >, <, >=, <=, ==, !=
+3- Logical:    &&, ||, !
+4- Ternary / conditional operator:  condition?expr1:expr2
+5- Assignment:  =
+6- Increment/decrement:  ++, --, +=, -=
+7- Equatity operator: ===
+8- typeof
+9- delete
+10- instanceof
+----------------------------------------
+Operator Associativity and Precedence:-
+----------------------------------------------------------------------------------------------
+
+Javascript Input and Output:-
+Input:
+	1- window.prompt, confirm
+	2- DOM-
+		document.getElementById
+		document.getElementsByName
+		document.getElementsByClassName
+		document.getElementsByTagName
+		document.querySelector 
+		document.querySelectorAll
+w.a.p. to enter 3 number and find out sum.
+		
+
+Task 1- 
+write code to implement small image gallery like.
+-----------------------------------------------------------------------------------------------
+Output:
+	window.alert
+	document.write
+	console.log,console.warn, console.error
+	DOM- innerHTML, innerText, value, textContent etc.
+------------------------------------------------------------------------------------------------
+TypeCasting:- typecasting is the way of convert data from one type to another type.
+there is 2 type typecasting.
+1- implicit typecasting-: it automatically perform by DOM parser, we don't need to write any extra code for that, it automatically parse on behalf of operators.  
+2- Explicit typecasting:- this is manyally perform by user. we can typecast  datausing fallowing methods.
+a- parseInt
+b- parseFloat
+c- using constructor
+d- toString()
+---------------------------------------------------
+
+
+
+var x="475";
+var y="56";
+var r=x>y;
+-------------------------------------------------------------------------------------------------
+
+camele case
+parseInt()
+
+object-small case
+constructor-> capitalize
+Number
+Date
+Window  window
+Document document
+
+                                                                              window
+                                                                                
+                          		                  document
+
+                                                                    html
+                                           head                                   body
+
+
+
+
+Exa: w.a.p. to enter 3 number and print sum of all.
+-----------------------------------------------------------------------------------------
+
+Control flow statement-
+-1- decision making statement- 
+	a- if else
+	
+		Syntax:
+
+			if(condition)  40>5  //1
+			{
+			statements;
+			}
+			else{
+			statements;
+			}
+
+		b- else if/ladder if
+
+
+			if(condition)  
+			{
+			statements;
+			}
+			else if(condition){
+			statements;
+			}
+			else{
+			statements;
+			}
+
+	w.a.p.to enter 3 number and find out largest.
+	
+	
+	c- nested if
+			if(condition)
+			{
+			if(condition)
+			{
+			Statements;			
+			}
+			else{
+			Stamements;
+			}
+			}
+			else{
+			Stamements;
+			}
+--------------------------------------------------------------------------------------------------------------------------------
+Assignment:-
+
+1- w.a.p. to enter four number and find out smallest
+2- w.a.p. to enter 3 number and find out middle number/second largest
+3- w.a.p. to enter amount of goods and find out discounts on basis of amount, 
+where if amount>=30000 then discount will be 30%
+if amount >=20000 and<30000  then discount will be 20%
+if amount >=10000 and <20000 then discount will be 10%;
+otherwise print no discount.
+also find out rest/payble amount.
+
+4- w.a.p. to enter 2 number and swap it,
+also swap without using 3rd variable.
+
+
+5- w.a.p. to enter marks of five subject and calculate
+	total marks
+	percentage
+	grade - where grading system fallow as 10+2.
+
+Note- also enter name and generate marksheet format.
+
+6- w.a.p. to enter 3 number and sort it.
+7- w.a.p. enter mobile number validate it.
+	where if number is valid only , when it 10 digit and value is numaric and start with only 	9/8/7
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+var x=5;
+var y=6;
+                      x=6 y=5
+x=x+y  => 11
+y=x-y;  => 6
+x=x-y; =>5
+
+var x=10,y=50,z=60;
+
+if(x>y && x>z)
+{
+ if(y>z){
+ sl=y;
+}
+else{
+sl=z;
+}
+}
+else if(y>x && y>z){
+
+}
+
+var amount=25000;
+var discount=0,rest=0;
+if(amount>=30000){
+discount=amount*30/100;
+rest=amount-discount;
+}
+else if(amount>=20000 && amount<30000){
+discount=amount*20/100;
+rest=amount-discount;
+}
+else if(amount>=10000 && amount<20000){
+discount=amount*10/100;
+rest=amount-discount;
+}
+else{
+discount=amount*5/100;
+rest=amount-discount;
+}
+
+print disocunt
+print rest 
+
+
+2- Switch case statement-
+
+  switch(variable)
+{
+case 1:
+statements;
+break;
+
+case 2:
+statements;
+break;
+
+
+case n:
+statements;
+break;
+
+default:
+statements;
+break;
+
+}
+
+January 15 2015
+Sunday 15 January 2020
+
+
+
+3- Loop statement-:
+                 Looping is the mechanism to iterate statements , n number of time, according to given conditions. a loop can repeat statements n  number of time. there is 3 type of loop.
+1- pre-tested loop-
+	these are the loop, which check conditions first then execute statement.
+	exa:
+		while  loop
+		for loop
+------------------------------------
+while:-
+
+	initialization;
+	while(condition)
+	{
+	statements;
+	inc/dec;
+	}
+-----------------------------------------
+exa: 
+	var i=1;
+	while(i<=50)
+	{
+	document.write(i);
+	i++;
+	}
+------------------------------------------
+for loop:
+	for(initialization; condition; inc/dec){
+	statements;
+	}
+------------------------------------------
+	for(var i=0; i<=20; i++){
+	document.write(i)
+	}
+------------------------------------------
+var n=2;
+for(var i=1; i<=10; i++){
+var t=n*i;
+documen.write(t);
+}
+--------------------------------------------------
+
+while loop-
+
+1- w.a.p. to enter any number and find out factorial of it.
+2- w.a.p. to enter any number and check the number is prime or not.
+3- w.a.p. to enter any number and check the number pelindrom or not.
+4- w.a.p. to print fibnucci series to the given n terms.
+	exa: input 10
+ 	          output: 0,1,1,2,3,5,8,13,21,34
+
+--------------------------------------------------------------------------------
+
+for loop------------------------------
+ 
+1-w.a.p. to enter any number and generate table of it using for loop.
+
+2-w.a.p. to enter any two number and find out GCD between both number.
+
+3- Write the to print fallowing patterns.
+
+1- 
+
+1 2 3 4 5 
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+
+2- 
+
+1 1 1 1
+2 2 2 2
+3 3 3 3
+4 4 4 4
+
+3-
+
+1 * * * *
+* 2 * * *
+* * 3 * *
+* * * 4 *
+* * * * 5
+
+4-
+*  *  *  *  *
+*  *  *  *
+*  *  * 
+*  *
+*
+
+
+5- 
+
+a b c d e
+a b c d
+a b c 
+a b
+a
+
+6-
+
+e d c b a
+d c b a
+c b a
+b a
+a
+
+7- 
+                        1
+                     1 2
+                  1 2 3
+               1 2 3 4
+             1 2 3 4 5
+
+8-
+                        *
+                      * * *
+                    * * * * *
+                  * * * * * * *
+                * * * * * * * * *
+9-
+
+* * * * * * * 
+* * * * * 
+* * *
+* 
+* * *
+* * * * *
+* * * * * * *
+
+
+10- 
+
+
+                         *
+                      * * *
+                   * * * * *
+                 * * * * * * *
+              * * * * * * * * *
+                 * * * * * * *
+                    * * * * * 
+                       * * *
+                          *
+
+11- w.a.p. to print chess table.
+---------------------------------------------------------------------------------------------
+Array:- 
+Array is the collection items, where each item stored on particular index position, and index started from 0. also array is the enumrable type of object, which offers numaric indexes to visit on each item.
+javascript has simple declaration rule of array-
+var arrayName=[item1,item2,itemn];  // array literals declaration.
+var arrayName=new Array(length/items);  //constructor method
+
+Array iteration: is the machanism to visit on array indexes. it can possible using loop or access single item using index position.
+
+------------------------------------------------------------------
+Array manipulation- to manipulate array , javascript provide built in methods that can be use, they methods divided into two category.
+1- mutable methods-push,pop,shift,unshift,splice,sort.
+2- immutable methods-filter,map, forEach, every, join, concat,
+pending--- indexOf,lastIndexOf,findIndex, includes,some,reverse,reduce,isArray, from etc.
+
+Example code:
+
+html:
+------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter Item : </label>
+    <input type="text" id="item">
+    <button id="btn_add">Add Item</button>
+    <button id="btn_pop">Pop Item</button>
+    <br>
+    <ul id="list">
+    </ul>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+js--
+---------------------------------------------
+var items=[];
+function AddItem(){
+    var item=_("item").value;
+    items.unshift(item);
+    _("item").value=""
+    BindItem(items);
+}
+
+function BindItem(listitem){
+    var template=``;
+    listitem.forEach((v,i)=>{
+        template+=`<li id="${i}" onclick=DeleteOne(this.id)>${v}</li>`;
+    })
+   _("list").innerHTML=template;
+}
+
+function PopItem(){
+    items.shift();
+    BindItem(items);
+}
+
+function DeleteOne(index){
+    items.splice(index,1);
+    BindItem(items);
+}
+
+_("btn_pop").addEventListener("click",PopItem);
+
+_("btn_add").addEventListener("click",AddItem);
+
+function _(id){
+    return document.getElementById(id);
+}
+----------------------------------------------------------------------------------
+Object-: 
+Object is the key and value pair based, where it is called non-enumrable object, because of key is the string.
+
+object declration: object can delare using fallowing methods.
+1- using object literal
+	var mobile={"key/prop":"value"};
+2- using object constructor function
+	var mobile=new Object();
+	mobile.prop=value;
+3- using object contructor.
+	var Mobile=function(val1,val2valn){
+	this.prop1=val1;
+	this.prop2=val2;
+	this.prop3=val3;
+	}
+	
+	var mobile=new Mobile("abc","xyz","xxt");
+{
+"statusCode":200,
+"message":"ok",
+"errorCode":0,
+"data":[
+{"name":"abhi","age":22},
+{"name":"abhi","age":22},
+{"name":"abhi","age":22}
+]
+}
+----------------------------------------------------------------------------------
+Object Manipulation:-
+delete-: operator can use to delete prop of object.
+Object.assign():- this method can be use to copy the object and create clone of object.
+-----------------------------------------------------------------------------------
+Records-
+
+[{
+"CountryName":"India",State:{UP:[luck,vara,noida],"mp":[]},
+"CountryName":"India",State:{UP:[luck,vara,noida],"mp":[]},
+
+}
+1- India
+	a- Uttar pradesh
+		i- lucknow
+		ii- varanasi
+		iii- noida
+	b- Madhya pradesh
+		i- riva
+		ii- bundelkhand
+		iii- karvi
+2- Pakistan
+	a- Uttar pradesh
+		i- lucknow
+		ii- varanasi
+		iii- noida
+	b- Madhya pradesh
+		i- riva
+		ii- bundelkhand
+		iii- karvi
+-------------------------------------------------------------------
+Question: let's we have an nested array, where inside we don't now how many array or other property exist. we need to visit on each array and its index and bind all property of array and other type.
+var arr=[2,3,4,[5,3,4,[2,9,22],12,[12,22,33,[54,66,55]]]]
+-----------------------------------------------------------------------------------------
+Function: - function is the set of instructions, written sequnetial manner to perform specific task. javacript offers 2 type function-
+a- library function/built-in functions-
+b- user define function-
+
+a- library functions-
+	a- string
+	b- math
+	c- date time
+	d- interval
+b- User function-
+	a- simple function
+
+	function functionName(argurments/parameters?){  //function block
+	// function code;
+	return value;?
+	}
+
+	b- expression function-
+
+	these function created inside a object.  where object represent to particular group.
+	
+var Myfactory={};
+Myfactory.sum=function(x,y){
+    return x+y;
+}
+
+Myfactory.multiply=function(x,y){
+    return x*y;
+}
+
+Myfactory.division=function(x,y){
+    return x/y;
+}
+
+var r=Myfactory.multiply(3,4)
+console.log(r)
+
+	c- constructor function
+		constructor function are that function, which we need to instatiate before 		call it like instance class in other language.
+	
+	d- recursive function
+
+		recursive function are those function , who call itselft from inside it.
+		it can repeat self to n number of time. recursive function helpfull to deal with infinite terms 		situation.
+		syntax:
+		function functionName(){
+
+		//statements;
+		some condition
+		{
+		return functionName()
+		}
+		else{
+		return anotherthing.
+		}
+		}
+--------------------------------------------------------------------------------------
+
+
+
+	e- function clouser-
+		A clouser function is the inner function, which access its outer function variables.
+		a clouser function prevent from outside script hacking, and make safer script.
+		most developer prefer write these scripts in clouser syntax.
+		
+	f- function with callback-
+		a callback function is the function which pass inside function as arguments.
+these functions can be use to call something after do something. also helpfull to take results after successfull execution of code.
+
+	function sum(x,y)
+	{
+	console.log(x+y)
+	}
+
+	function multiply(x,y)
+	{
+	console.log(x*y)
+	}
+
+	sum(4,5)
+	multiply(5,6)
+-------------------------------------------------------------
+
+	g- pure and impure function
+		-
+                                 function Test(obj){
+
+		obj.x+=10;
+		obj.y+=20;
+		console.log("Inside X "+obj.x)
+		console.log("Inside Y "+obj.y)
+
+		}    
+
+	          var myobj={"x":5,"y":7}
+		Test(myobj)
+	                    console.log("Outside X "+myobj.x)
+		console.log("Outside Y "+myobj.y)
+
+	h- function hoisting
+		In other programming language functions executed in top to bottom manner.
+		javascript also fallow top to bottom paradigam but it has a special case during dom l		loading, it moves all the declared functions  to the top and call after them, this featurs is 		called function hoisting..
+	
+		Note: a expression function do not support hoisting.
+
+		arguments
+-----------------------------------------------------------------
+
+string: 
+	a- trim
+	b- replace
+	c- split
+	d- toLower/toupper
+	e- chatAt
+	f- charCodeAt
+	g- concat
+	h- endsWith/startsWith
+	i- includes
+	j- substr/subString/slice
+	k- sup/sub
+	l- repeat
+	m- String.fromCharCode
+	
+string declaration-
+	a- string literals- var str="xyz";
+	b- string constructor-  var str=new String("xyz");
+-----------------------------------------------------------------------------------
+
+Quiz Application: 
+create a quiz application of 20 question, also gives result after end of test,
+test must be of 30 minute min where each question can have max 90 sec.
+----------------------------------------------------------------------------------------------------
+
+8- Document Object Model:-
+	a- dom get and set-
+		all the methods and property , which are usefull to take input from 		html and put output on html , is called dom get and set.
+                  b- dynamic html- javascript dom  allow you to create and remove dynamic html.
+		to create /remove can be use fallowing methods.
+		 
+                                       1- document.createElement
+		2- document.createTextNode
+		3- document.setAttribute
+		4- document.getAttribute
+		5- document.removeAttribute
+		6- document.append
+		7- document.appendChild
+		8- document.removeChild
+	c- DOM traversing- 
+		traversing referes to visit on each and every node in html document.
+		also can capture required node.
+		there is 4 path , either parent or child, and either previous sibling or 	next sibling.
+
+
+	d- animation and css
+		to apply css use fallowing method and props.
+		a- style 
+		b- classList
+		c- setAttribute/getAttribute/removeAttrbute
+	
+		
+	e- Event and event handling.
+                         
+---------------------------------------------------------------------------------------------------------------
+text
+password
+email
+tel
+url
+radio
+checkbox
+---------------------------------
+classes/css- classes param.
+form-control validation-control
+parent Node-
+
+--------------------------------------------------------------------------------------
+10- Browser Object Model
+		a- window object
+		b- hisotry 
+		c- navigation
+		d- cookie
+		e- localStorage and sessionStorage
+		f- Gettting App info.
+		g- Handling Geolocation.
+--------------------------------------------------------------------------
+Create a html form with fallowing fields and apply fallowing validation rules.
+form-field-
+	name - textbox- must be filled and value must be alphabete.
+	email- email- must be field and email formatted.
+	mobile- text- must be filled and mobile formatted
+	gender- radio- must be selected
+	country- dropdown- must be selected
+	hobbies- checkbox- must be one or more checked.
+	pincode- textbox- must be filled and formatted.
+	password- password- must be filled and should be strong format.
+	confirmpassword- password- must be filled and match with password.
+---------------------------------------------------------------------------------------------------------------
+	write blur validations and formsubmit validations.
+--------------------------------------------------------------------------------------------------------------
+Cookie: cookie is the small amount of data , which can store in browser and  use later.
+	document.cookie="name=value;args";
+	
+	max-age
+	domain
+	path-  x->y->z->a
+                                        s->Z->a
+	
+--------------------------------------------------------
+create a login form with complete form validation , also create a checkbox to save user authentication in web browser, if user checked check box then maintain authentication in cookie and retrive autmatically from there.
+------------------------------------------------------------------------------------------------------------------
+LocalStorage and SessionStorage -:
+
+setItem
+getItem
+clear
+removeItem
+------------------------------------------------
+w.a script to block in webpage fallowing-
+a- back click
+b- next click
+c- backspace button
+d- delete button
+--------------------------------------------------------
+JSON and Ajax:-
+JSON stand for javascript object notation, json is the standard javascript object formatted data. where we can store data in the form of object using seprate .json file.
+these file can be ready using either file handling or using Ajax.
+json formatted data can be use to transfer from server-client or client to server.
+--------------------------
+exa: 
+
+{
+"key":value,
+"key":value
+}
+---------------------------------------------
+JSON parsing - to parse json formatted string to json use JSON.parse and to parse json data to string use JSON.stringify method.
+--------------------------------------------------------------
+AJAX- ajax stand for Asyncronous Javascript XML.  ajax usefull to send the request to server and get the response from server using javascript.
+there major 2 things, that we need to understand.
+1- readyState:  this is the ajax event that fires when the request send and during request processing , it return each case in status code like- 0,1,2,3,4
+0- default
+1- request sended
+2- request accepted
+3- request proccessing error
+4- request successfully proccessed 
+
+2- status: status represent server status, where whats going on in server. where it also return status code, and each code have a meaning.
+like- 
+200ok
+404 url not found
+403 forbidden error
+500 server error
+501 server internal error etc.
+ -------------------------------------------------
+Syntax to send request-
+to send request to server use fallowing object-
+a- XMLHttpDocument- for old browser
+b- XMLHTTPLRequest- for all modern browser.
+------------------------------------------------------------------------
+
+
+class:
+contructor
+method
+prototype
+property / property get and set
+static member.
+inheritance
+single level  -ok
+multi level -ok
+multiple- not
+hybrid - not
+hirarchical- ok
+
+---------------
+---------------------------------------
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

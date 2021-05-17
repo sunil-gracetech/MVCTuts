@@ -1,0 +1,50 @@
+Q1) What are the lead components of Angular?
+Q2) What is CLI and how to use for angular?
+Q3) Difference between constructor and ngOnInit?
+Q4) How DI(dependency injection) works in Angular?
+Q5) What is ngFor directive?
+Q6) Difference between pure and impure pipe?
+Q7) What is RxJS and use of this?
+Q8) What is Angular Router and use of this?
+Q9) What is the use of base href tag?
+Q10) What are the router imports?
+Q11) List out the router events?
+Q12) What is Angular Universal?
+Q13) What are types of compilation in Angular?
+Q14) What is AOT in angular?
+Q15) What is the syntax of decorator in Angular?
+Q16) What is the purpose of common module?
+Q17) What is State function?
+Q18) Which are the class decorators in Angular?
+Q19) What are the class field decorators?
+Q20) What is One-way binding in AngularJS?
+Q21) What is the (ngModel) used for in AngularJS?
+Q22) What is a digest cycle in Angular?
+Q23) What Is @ngmodule in angular?
+Q24) What Is @inputs In Angular?
+Q25) How Lifecycle hooks works in order?
+Q26) When ngOnInit used to call in Angular?
+Q27) How async pipe prevent memory leeks?
+Q28) What is lean component mean in Angular?
+Q29) Why do we required route guards in Angular?
+Q30) What is the use of RouterOutlet?
+Q31) What are the building blocks of Angular application?
+Q32) What is mean of reliability injection in angular?
+Q33) What is the Difference between ng-class and ng-style?
+Q34) what is binding and describe the types?
+Q35) What are the different ng commands in angular?
+Q36) What are the data types define in TypeScript?
+Q37) What is required to validate the form inputs?
+Q38) What are the ways to create custom directive in angular?
+Q39) Describe about the Directive and Directive Types?
+Q40) What is data Binding in angular and how it works?
+Q41) What is Singleton pattern and how it works in AngularJS?
+Q42) What are the event listener directives that attach to HTML element?
+Q43) What are the various styling form in Angular which has to adds in CSS classes by ngModel?
+Q44) What are the built-in validators in AngularJS list out few of them?
+Q45) What are the Structural and Attribute directives Structural in Angular JS?
+Q46) what angular.json file represent in Angular CLI?
+Q47) How to use *ngFor Loop directive?
+Q48) What type of data work with an async pipe , list out few?
+Q49) Difference between scan() vs reduce() in AngularJS?
+Q50) How the TypeScript code is converted into JavaScript code, brief the process?
